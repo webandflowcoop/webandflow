@@ -199,14 +199,14 @@ footer .nav-link.active {
 }
 
 .portfolio-item:hover img {
-  transform: scale(1.1); /* Zoom effect on hover */
+  transform: scale(0.95); /* Zoom effect on hover */
 }
 
 .overlay {
   position: absolute;
   bottom: 0;
-  background: rgba(0, 0, 0, 0.5);
-  color: white;
+  background: rgba(0, 0, 0, 0.8);
+  color:ghostwhite;
   width: 100%;
   text-align: center;
   opacity: 0;
