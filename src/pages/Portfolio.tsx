@@ -1,20 +1,14 @@
-import Jessica from "../assets/upstreamottawa.png";
+//import UpstreamOttawa from "../assets/upstreamottawa.png";
+import LondonFoodCoopLogo from "../assets/lfc-logo.png";
 
 const Portfolio = () => {
   const projects = [
     {
-      title: "Project A",
-      image: Jessica,
-      description: "A cool project we built with React.",
-      link: "https://projectA.com",
-    },
-    {
-      title: "Project B",
-      image: Jessica,
-      description: "A design project we did for a client.",
-      link: "https://projectB.com",
-    },
-    // Add more projects here...
+      title: "London Food Co-op",
+      image: LondonFoodCoopLogo,
+      description: "Updates and maintenance in WordPress",
+      link: "https://londonfood.coop",
+    }
   ];
 
   return (
@@ -28,11 +22,9 @@ const Portfolio = () => {
                 <img
                   src={project.image}
                   alt={project.title}
-                  className="img-fluid"
-                  style={{ height: "250px", objectFit: "cover" }}
                 />
                 <div className="overlay">
-                  <h5>{project.title}</h5>
+                  <p>{project.title}</p>
                   <p>{project.description}</p>
                 </div>
               </a>
