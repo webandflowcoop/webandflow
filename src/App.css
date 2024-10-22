@@ -15,7 +15,8 @@
 
 body {
   font-family: "Montserrat", sans-serif !important;
-  font-size: 18px !important;
+  font-size: 20px !important;
+  font-weight: 300 !important;
   line-height: 1.6 !important;
   background-color: var(--white-smoke) !important;
   color: #333;
@@ -31,22 +32,31 @@ h5,
 h6 {
   font-family: "Poppins", sans-serif;
   font-optical-sizing: auto;
-  font-weight: 800 !important;
-  font-style: italic;
-  margin-bottom: 1rem !important;
   white-space: nowrap !important;
 }
 
 h1 {
   font-size: 2.5rem;
+  font-weight: 800 !;
+  font-style: italic;
 }
 
 h2 {
   font-size: 2rem;
 }
 
-a {
-  color: var(--very-peri);
+button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: var(--very-peri);
+  color: var(--cloud-dancer);
+  border-color: var(--ultimate-grey);
+  font-weight: 500;
+}
+
+button:hover {
+  background-color: var(--lime-green);
+  transition: background-color 0.3s ease;
 }
 
 .root {
@@ -63,7 +73,6 @@ a {
   position: relative;
   display: inline-block;
   padding: 25px;
-  margin: 0 70px;
   background-image: url("./assets/brush-stroke.svg");
   background-size: contain;
   background-repeat: no-repeat;
@@ -73,26 +82,10 @@ a {
   transform: scale(1.8);
 }
 
-/* Buttons */
-.btn {
-  display: inline-block;
-  padding: 10px 20px;
-  background-color: var(--very-peri);
-  color: #fff;
-  border-radius: 5px;
-  text-decoration: none;
-  text-align: center;
-}
-
-.btn:hover {
-  background-color: var(--lime-green);
-  transition: background-color 0.3s ease;
-}
-
 /* Navbar */
 .navbar {
   background-color: var(--very-peri);
-  border-bottom: 1px solid var(--cloud-dancer);
+  border-bottom: 1px solid var(--ultimate-grey);
   font-family: "Josefin Sans", sans-serif;
 }
 
@@ -146,12 +139,13 @@ a {
 
 /* Footer */
 footer {
-  color: var(--cloud-dancer);
+  color: var(--very-peri);
+  background-color: var(--cloud-dancer);
 }
 
 footer .nav-link,
 footer a {
-  color: var(--white-smoke);
+  color: var(--very-peri);
 }
 
 footer .nav-link:hover,
@@ -175,7 +169,15 @@ footer .nav-link.active {
 
 .card:hover {
   transform: translateY(-10px);
-  /* transform: scale(1.05); */
+}
+
+.card-title {
+  font-weight: 300;
+  font-size: 1.4rem;
+}
+
+.card-text {
+  font-size: 1.1rem;
 }
 
 .social-links a {
@@ -192,23 +194,36 @@ footer .nav-link.active {
 .portfolio-item {
   position: relative;
   overflow: hidden;
+  padding: 15px;
+  border: 1px solid var(--cloud-dancer);
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(147, 149, 151, 0.3);
 }
 
 .portfolio-item img {
+  width: 100%;
+  height: auto;
+  max-height: 300px;
+  object-fit: cover;
+  border-radius: 8px;
   transition: transform 0.3s ease;
 }
 
 .portfolio-item:hover img {
-  transform: scale(0.95); /* Zoom effect on hover */
+  transform: scale(0.95);
 }
 
 .overlay {
   position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
   bottom: 0;
-  background: rgba(0, 0, 0, 0.8);
-  color:ghostwhite;
-  width: 100%;
-  text-align: center;
+  background: rgba(0, 0, 0, 0.7);
+  color: var(--cloud-dancer);
+  display: flex;
+  justify-content: center;
+  align-items: center;
   opacity: 0;
   transition: opacity 0.3s ease;
 }
@@ -217,11 +232,24 @@ footer .nav-link.active {
   opacity: 1;
 }
 
-@media (max-width: 768px) {
-  .responsive-text {
-    font-size: 1rem !important;
-    padding: 20px 0;
-  }
+.contact {
+  color: var(--lime-green);
+}
+.contact:hover {
+  color: var(--very-peri);
+}
+
+mark {
+  background-color: var(--very-peri) !important;
+  color: var(--lime-green);
+  font-weight: 500;
+  border-radius: 3px;
+}
+mark:hover {
+  background-color: var(--lime-green) !important;
+  color: var(--very-peri);
+  font-weight: 500;
+  border-radius: 3px;
 }
 
 /** CONTACT **/
@@ -296,5 +324,12 @@ footer .nav-link.active {
   color: #fff;
   padding: 13px 5px;
   border-radius: 0.375rem;
+}
 
+/** MEDIA QUERIES **/
+@media (max-width: 768px) {
+  .responsive-text {
+    font-size: 1rem !important;
+    padding: 20px 0;
+  }
 }
