@@ -1,4 +1,4 @@
-import { FaLinkedin, FaEnvelope } from "react-icons/fa";
+import { FaEnvelope } from "react-icons/fa";
 import Jessica from "../assets/jessica-no-background.png";
 import Mayumi from "../assets/mayumi-no-background.png";
 import Murilo from "../assets/murilo-no-background.png";
@@ -11,7 +11,6 @@ const Home = () => {
       blurb:
         "Jessica is an accomplished web developer who excels in business communication.",
       socials: {
-        linkedin: "https://ca.linkedin.com/in/jessica-trigo",
         email: "mailto:jessica@webandflow.coop",
       },
     },
@@ -21,7 +20,6 @@ const Home = () => {
       blurb:
         "Mayumi is an outstanding designer with a keen eye for the user’s experience.",
       socials: {
-        linkedin: "https://ca.linkedin.com/in/mayumi-brilhante-653472249",
         email: "mailto:mayumi@webandflow.coop",
       },
     },
@@ -31,7 +29,6 @@ const Home = () => {
       blurb:
         "Murilo is a seasoned software engineer with an aptitude for managing projects.",
       socials: {
-        linkedin: "https://ca.linkedin.com/in/murilotrigo",
         email: "mailto:murilo@webandflow.coop",
       },
     },
@@ -73,15 +70,6 @@ const Home = () => {
                   <h5 className="card-title">{member.name}</h5>
                   <p className="card-text">{member.blurb}</p>
                   <div className="social-links">
-                    <a
-                      href={member.socials.linkedin}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="me-2"
-                      aria-label={`Linkedin - ${member.name}`}
-                    >
-                      <FaLinkedin size={30} />
-                    </a>
                     <a
                       href={member.socials.email}
                       target="_blank"
