@@ -43,16 +43,6 @@ const Navbar = () => {
           </div>
           <div className="offcanvas-body">
             <ul className="navbar-nav justify-content-end flex-grow-1 pe-3">
-              {/* <li data-bs-dismiss="offcanvas">
-                <NavLink
-                  className={({ isActive }) =>
-                    isActive ? "nav-link active" : "nav-link"
-                  }
-                  to="/about"
-                >
-                  About
-                </NavLink>
-              </li> */}
               <li data-bs-dismiss="offcanvas">
                 <NavLink
                   className={({ isActive }) =>

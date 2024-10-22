@@ -1,26 +1,15 @@
 import { NavLink } from "react-router-dom";
-
-import { FaLinkedin, FaEnvelope } from "react-icons/fa";
+import { FaEnvelope } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <footer className="bg-dark bg-gradient text-center p-1">
+    <footer className="bg-gradient text-center p-1">
       <div className="container-fluid">
         <div className="d-flex flex-column flex-lg-row justify-content-between align-items-center flex-wrap p-3">
           <ul className="list-inline mb-0">
-            <li className="list-inline-item">
-              <a
-                href="https://ca.linkedin.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <FaLinkedin size={25} />
-              </a>
-            </li>
-
             <li className="list-inline-item ms-3">
               <a
-                href="mailto:admin@webandflow.coop"
+                href="mailto:hello@webandflow.coop"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -32,16 +21,6 @@ const Footer = () => {
             &copy; {new Date().getFullYear()} Web & Flow. All rights reserved.
           </p>
           <ul className="list-inline mb-0">
-            {/* <li className="list-inline-item ">
-              <NavLink
-                className={({ isActive }) =>
-                  isActive ? "nav-link active" : "nav-link"
-                }
-                to="/about"
-              >
-                about
-              </NavLink>
-            </li> */}
             <li className="list-inline-item ms-3">
               <NavLink
                 className={({ isActive }) =>
