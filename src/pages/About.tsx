@@ -1,4 +1,4 @@
-import { FaEnvelope } from "react-icons/fa";
+import { FaLinkedin, FaEnvelope } from "react-icons/fa";
 import Jessica from "../assets/1.png";
 import Mayumi from "../assets/3.png";
 import Murilo from "../assets/2.png";
@@ -11,7 +11,7 @@ const About = () => {
       blurb:
         "Jessica is an accomplished web developer who excels in business communication.",
       socials: {
-        linkedin: "https://ca.linkedin.com/",
+        linkedin: "https://ca.linkedin.com/in/jessica-trigo",
         email: "mailto:jessica@webandflow.coop",
       },
     },
@@ -21,7 +21,7 @@ const About = () => {
       blurb:
         "Mayumi is an outstanding designer with a keen eye for the user’s experience.",
       socials: {
-        linkedin: "https://ca.linkedin.com/",
+        linkedin: "https://ca.linkedin.com/in/mayumi-brilhante-653472249",
         email: "mailto:mayumi@webandflow.coop",
       },
     },
@@ -31,7 +31,7 @@ const About = () => {
       blurb:
         "Murilo is a seasoned software engineer with an aptitude for managing projects.",
       socials: {
-        linkedin: "https://ca.linkedin.com/",
+        linkedin: "https://ca.linkedin.com/in/murilotrigo",
         email: "mailto:murilo@webandflow.coop",
       },
     },
@@ -41,19 +41,6 @@ const About = () => {
     <div className="container mt-5">
       <h1 className="text-center mt-5 brush-title">About Us</h1>
       <div className="body-content">
-        {/* <div className="row mb-4">
-          <div className="col-12">
-            <p>
-              The cooperative was born by combining years of multi-disciplinary
-              experiences and shared work ethics into a sustainable business.
-              <br />
-              <br />
-              Web & Flow is always looking to support projects and enterprises
-              that share its values of democracy at work and social equality.
-            </p>
-          </div>
-        </div> */}
-
         <div className="row mb-5">
           <div className="col-12 text-center">
             <div className="p-4 bg-light rounded shadow-sm">
@@ -87,7 +74,7 @@ const About = () => {
                   <h5 className="card-title">{member.name}</h5>
                   <p className="card-text">{member.blurb}</p>
                   <div className="social-links">
-                    {/* <a
+                    <a
                       href={member.socials.linkedin}
                       target="_blank"
                       rel="noopener noreferrer"
@@ -95,7 +82,7 @@ const About = () => {
                       aria-label={`Linkedin - ${member.name}`}
                     >
                       <FaLinkedin size={25} />
-                    </a> */}
+                    </a>
                     <a
                       href={member.socials.email}
                       target="_blank"

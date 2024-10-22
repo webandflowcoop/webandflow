@@ -1,4 +1,3 @@
-//import UpstreamOttawa from "../assets/upstreamottawa.png";
 import LondonFoodCoopLogo from "../assets/lfc-logo.png";
 
 const Portfolio = () => {
@@ -8,102 +7,71 @@ const Portfolio = () => {
       image: LondonFoodCoopLogo,
       description: "Updates and maintenance in WordPress",
       link: "https://londonfood.coop",
-    }
+    },
   ];
 
   return (
     <div className="container mt-5">
-      <h1 className="mt-5 brush-title">Portfolio</h1>
-      <div className="row">
-        {projects.map((project, index) => (
-          <div className="col-md-6 col-lg-4 mb-4" key={index}>
-            <div className="portfolio-item">
-              <a href={project.link} target="_blank" rel="noopener noreferrer">
-                <img
-                  src={project.image}
-                  alt={project.title}
-                />
-                <div className="overlay">
-                  <p>{project.title}</p>
-                  <p>{project.description}</p>
-                </div>
-              </a>
-            </div>
+      <div className="body-content">
+        <div className="row align-items-center">
+          <div className="col text-center">
+            <h1 className="brush-title">Portfolio</h1>
           </div>
-        ))}
+        </div>
+
+        <div className="row ">
+          <p className="mt-3 text-justify">
+            Welcome to the Web & Flow portfolio. We are a cooperative dedicated
+            to providing innovative web development solutions, focusing on
+            supporting non-profits and local small businesses.
+          </p>
+        </div>
+        <div className="row">
+          <p className="mt-3">
+            Here are some of the clients we've had the opportunity to work with.
+          </p>
+        </div>
+        <div className="row justify-content-center mt-5">
+          {projects.map((project, index) => (
+            <div className="col-md-6 col-lg-4 mb-4" key={index}>
+              <div className="portfolio-item position-relative">
+                <a
+                  href={project.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    src={project.image}
+                    alt={project.title}
+                    className="img-fluid"
+                  />
+                  <div className="overlay d-flex justify-content-center align-items-center">
+                    <div className="text-center">
+                      <p className="h5 text-white">{project.title}</p>
+                      <p className="text-white">{project.description}</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          ))}
+        </div>
+        <div className="row mt-5">
+          <div className="col text-center">
+            <p className="portfolio-contact">
+              If you’re interested in working together or have any questions,
+              feel free to contact us at our contact page or send us an email at{" "}
+              <mark>
+                <a href="mailto:hello@webandflow.coop" className="contact">
+                  hello@webandflow.coop
+                </a>
+              </mark>
+              !
+            </p>
+          </div>
+        </div>
       </div>
     </div>
-
-    // const projects = [
-    //   {
-    //     title: "Project A",
-    //     image: Jessica,
-    //     description: "A cool project we built with React.",
-    //     link: "https://google.ca",
-    //   },
-    //   {
-    //     title: "Project B",
-    //     image: Jessica,
-    //     description: "A design project we did for a client.",
-    //     link: "https://google.ca",
-    //   },
-    // ];
-
-    // return (
-    //   <div className="container mt-5">
-    //     <h1 className="text-center mb-5">Our Portfolio</h1>
-    //     <div
-    //       id="portfolioCarousel"
-    //       className="carousel slide"
-    //       data-bs-ride="carousel"
-    //     >
-    //       <div className="carousel-inner">
-    //         {projects.map((project, index) => (
-    //           <div
-    //             className={`carousel-item ${index === 0 ? "active" : ""}`}
-    //             key={index}
-    //           >
-    //             <a href={project.link} target="_blank" rel="noopener noreferrer">
-    //               <img
-    //                 src={project.image}
-    //                 className="d-block w-100"
-    //                 alt={project.title}
-    //                 style={{ height: "500px", objectFit: "cover" }}
-    //               />
-    //               <div className="carousel-caption d-none d-md-block">
-    //                 <h5>{project.title}</h5>
-    //                 <p>{project.description}</p>
-    //               </div>
-    //             </a>
-    //           </div>
-    //         ))}
-    //       </div>
-    //       <button
-    //         className="carousel-control-prev"
-    //         type="button"
-    //         data-bs-target="#portfolioCarousel"
-    //         data-bs-slide="prev"
-    //       >
-    //         <span
-    //           className="carousel-control-prev-icon"
-    //           aria-hidden="true"
-    //         ></span>
-    //         <span className="visually-hidden">Previous</span>
-    //       </button>
-    //       <button
-    //         className="carousel-control-next"
-    //         type="button"
-    //         data-bs-target="#portfolioCarousel"
-    //         data-bs-slide="next"
-    //       >
-    //         <span
-    //           className="carousel-control-next-icon"
-    //           aria-hidden="true"
-    //         ></span>
-    //         <span className="visually-hidden">Next</span>
-    //       </button>
-    //     </div>
-    //   </div>
   );
 };
 
