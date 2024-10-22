@@ -6,7 +6,7 @@ const Navbar = () => {
       <div className="container d-flex justify-content-between align-items-center">
         <NavLink className="navbar-brand" to="/">
           <img
-            src={"./wf-lime.svg"}
+            src={"./wf-logo.svg"}
             alt="Web & Flow Logo"
             style={{
               height: "80px",
