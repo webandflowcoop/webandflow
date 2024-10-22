@@ -16,7 +16,7 @@
 body {
   font-family: "Montserrat", sans-serif !important;
   font-size: 20px !important;
-  font-weight: 300 !important;
+  font-weight: 400 !important;
   line-height: 1.6 !important;
   background-color: var(--white-smoke) !important;
   color: #333;
@@ -37,7 +37,7 @@ h6 {
 
 h1 {
   font-size: 2.5rem;
-  font-weight: 800 !;
+  font-weight: 800 !important;
   font-style: italic;
 }
 
@@ -82,6 +82,21 @@ button:hover {
   transform: scale(1.8);
 }
 
+.brush-text {
+  position: relative;
+  display: inline-block;
+  padding: 20px;
+  background-image: url("./assets/brush-stroke.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  font-weight: 800;
+  font-size: 20px;
+  -webkit-text-stroke: 0px var(--white-smoke);
+  color: var(--lime-green);
+  transform: scale(1);
+}
+
 /* Navbar */
 .navbar {
   background-color: var(--very-peri);
@@ -92,9 +107,9 @@ button:hover {
 .navbar .nav-link {
   color: var(--cloud-dancer);
   text-decoration: none;
-  font-size: 1.3rem;
+  font-size: 1.8rem;
   font-weight: 600;
-  text-transform: uppercase;
+  text-transform: lowercase;
 }
 
 .navbar .nav-link:hover {
@@ -233,21 +248,23 @@ footer .nav-link.active {
 }
 
 .contact {
-  color: var(--lime-green);
-}
-.contact:hover {
   color: var(--very-peri);
 }
 
-mark {
-  background-color: var(--very-peri) !important;
+.contact:hover {
   color: var(--lime-green);
+}
+
+mark {
+  background-color: var(--lime-green) !important;
+  color: var(--very-peri);
   font-weight: 500;
   border-radius: 3px;
 }
+
 mark:hover {
-  background-color: var(--lime-green) !important;
-  color: var(--very-peri);
+  background-color: var(--very-peri) !important;
+  color: var(--lime-green);
   font-weight: 500;
   border-radius: 3px;
 }

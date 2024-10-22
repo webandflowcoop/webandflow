@@ -13,7 +13,7 @@ const Footer = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <FaEnvelope size={25} />
+                <FaEnvelope size={30} />
               </a>
             </li>
           </ul>

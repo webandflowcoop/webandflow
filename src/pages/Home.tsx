@@ -41,36 +41,22 @@ const Home = () => {
     <div className="container mt-5">
       <div className="body-content">
         <div className="row align-items-center">
-          <div className="col text-center">
-            <h1 className="brush-title">Web & Flow</h1>
-          </div>
+          <div className="col text-center"></div>
         </div>
         <div className="row">
-          <div className="col">
-            <p className="mt-5">
-              A worker cooperative aiming to provide non-profits and other
-              socially responsible companies with affordable web development
-              services.
-            </p>
-          </div>
+          <p className="mt-3">
+            <span className="brush-text">Web & Flow</span> is a worker
+            cooperative aiming to provide non-profits and other local small
+            business with affordable web development services. The cooperative
+            was born by combining years of multi-disciplinary experiences and
+            shared work ethics into a sustainable business.
+          </p>
         </div>
         <div className="row mb-5">
-          <div>
-            <div>
-              <p>
-                The cooperative was born by combining years of
-                multi-disciplinary experiences and shared work ethics into a
-                sustainable business.
-              </p>
-              <p>
-                <strong>Web & Flow</strong> is always looking to support
-                projects and enterprises that share its values of
-                <strong> democracy at work </strong>
-                and
-                <strong> social equality</strong>.
-              </p>
-            </div>
-          </div>
+          <p>
+            We are always looking to support projects and enterprises that share
+            its values of democracy at work and social equality.
+          </p>
         </div>
 
         <div className="row">
@@ -94,7 +80,7 @@ const Home = () => {
                       className="me-2"
                       aria-label={`Linkedin - ${member.name}`}
                     >
-                      <FaLinkedin size={25} />
+                      <FaLinkedin size={30} />
                     </a>
                     <a
                       href={member.socials.email}
@@ -103,7 +89,7 @@ const Home = () => {
                       className="me-2"
                       aria-label={`Email - ${member.name}`}
                     >
-                      <FaEnvelope size={25} />
+                      <FaEnvelope size={30} />
                     </a>
                   </div>
                 </div>
