@@ -18,20 +18,12 @@ const Portfolio = () => {
             <h1 className="brush-title">Portfolio</h1>
           </div>
         </div>
-
-        <div className="row ">
-          <p className="mt-3 text-justify">
-            Welcome to the Web & Flow portfolio. We are a cooperative dedicated
-            to providing innovative web development solutions, focusing on
-            supporting non-profits and local small businesses.
-          </p>
-        </div>
         <div className="row">
-          <p className="mt-3">
-            Here are some of the clients we've had the opportunity to work with.
+          <p className="mt-3 text-center">
+            Here are some of the businesses we've had the opportunity to work with:
           </p>
         </div>
-        <div className="row justify-content-center mt-5">
+        <div className="row justify-content-center mt-3">
           {projects.map((project, index) => (
             <div className="col-md-6 col-lg-4 mb-4" key={index}>
               <div className="portfolio-item position-relative">
@@ -59,14 +51,12 @@ const Portfolio = () => {
         <div className="row mt-5">
           <div className="col text-center">
             <p className="portfolio-contact">
-              If you’re interested in working together or have any questions,
-              feel free to contact us at our contact page or send us an email at{" "}
+              If you’re interested in working with us, or you if have any questions,{" "}
               <mark>
-                <a href="mailto:hello@webandflow.coop" className="contact">
-                  hello@webandflow.coop
+                <a className="contact" href="/contact">
+                  <i>reach out!</i>
                 </a>
               </mark>
-              !
             </p>
           </div>
         </div>

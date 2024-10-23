@@ -7,13 +7,7 @@ const Contact = () => {
             <h1 className="brush-title">Contact Us</h1>
           </div>
         </div>
-
         <section className="contact-section">
-          <div className="contact-intro">
-            <p className="contact-description">
-              Fill out the form below and we'll get back to you
-            </p>
-          </div>
           <form
             className="contact-form"
             action="https://api.web3forms.com/submit"

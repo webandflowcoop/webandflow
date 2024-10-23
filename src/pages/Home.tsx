@@ -9,7 +9,7 @@ const Home = () => {
       name: "Jessica",
       image: Jessica,
       blurb:
-        "Jessica is an accomplished web developer who excels in business communication.",
+        "Jessica is an accomplished web developer who excels in business communication",
       socials: {
         email: "mailto:jessica@webandflow.coop",
       },
@@ -18,7 +18,7 @@ const Home = () => {
       name: "Mayumi",
       image: Mayumi,
       blurb:
-        "Mayumi is an outstanding designer with a keen eye for the user’s experience.",
+        "Mayumi is an outstanding designer with a keen eye for the user’s experience",
       socials: {
         email: "mailto:mayumi@webandflow.coop",
       },
@@ -27,7 +27,7 @@ const Home = () => {
       name: "Murilo",
       image: Murilo,
       blurb:
-        "Murilo is a seasoned software engineer with an aptitude for managing projects.",
+        "Murilo is a seasoned software engineer with an aptitude for managing projects",
       socials: {
         email: "mailto:murilo@webandflow.coop",
       },
@@ -40,22 +40,20 @@ const Home = () => {
         <div className="row align-items-center">
           <div className="col text-center"></div>
         </div>
-        <div className="row">
-          <p className="mt-3">
+        <div className="row mt-3">
+          <p>
             <span className="brush-text">Web & Flow</span> is a worker
-            cooperative aiming to provide non-profits and other local small
-            business with affordable web development services. The cooperative
-            was born by combining years of multi-disciplinary experiences and
-            shared work ethics into a sustainable business.
+            cooperative providing affordable web development services to 
+            non-profits, co-ops, and local businesses around London, Ontario.
           </p>
         </div>
         <div className="row mb-5">
           <p>
-            We are always looking to support projects and enterprises that share
-            its values of democracy at work and social equality.
+            The cooperative is a mix of our unique Brazillian charisma
+            with our years of multi-disciplinary experiences in 
+            technology, design, and customer service.
           </p>
         </div>
-
         <div className="row">
           {teamMembers.map((member, index) => (
             <div className="col-md-4 mb-4" key={index}>
