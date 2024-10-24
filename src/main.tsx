@@ -8,7 +8,7 @@ import "./App.css";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
-    <BrowserRouter basename="/webandflow">
+    <BrowserRouter basename="/">
       <App />
     </BrowserRouter>
   </StrictMode>
