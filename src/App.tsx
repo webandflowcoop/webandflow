@@ -1,3 +1,5 @@
+import { useEffect } from "react";
+import { useNavigate, useLocation } from "react-router-dom";
 import { Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar.tsx";
 import Home from "./pages/Home.tsx";
@@ -9,6 +11,21 @@ import Footer from "./components/Footer.tsx";
 import "./App.css";
 
 function App() {
+  const navigate = useNavigate();
+  const location = useLocation();
+
+  useEffect(() => {
+    const searchParams = new URLSearchParams(window.location.search);
+    const redirectPath = searchParams.get("redirect");
+
+    if (
+      redirectPath &&
+      (location.pathname === "/" || location.pathname === "/index.html")
+    ) {
+      navigate(redirectPath, { replace: true });
+    }
+  }, [navigate, location]);
+
   return (
     <div className="root">
       <Navbar />
