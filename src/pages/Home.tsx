@@ -10,7 +10,7 @@ const Home = () => {
       name: "Jessica",
       image: Jessica,
       blurb:
-        "Jessica is an accomplished web developer who excels in business communication",
+        "Jessica is an accomplished full-stack developer who excels in communication",
       socials: {
         email: "mailto:jessica@webandflow.coop",
       },
@@ -56,14 +56,13 @@ const Home = () => {
               <span className="brush-text">Web & Flow</span> is a worker
               cooperative providing affordable web development services to
               non-profits, co-ops, and local businesses around London, Ontario.
-            </p>
-          </div>
-          <div className="row mb-5">
-            <p>
               The cooperative is a mix of our unique Brazillian charisma with
               our years of multi-disciplinary experiences in technology, design,
               and customer service.
             </p>
+          </div>
+          <div className="row mb-5">
+            <p></p>
           </div>
           <div className="row">
             {teamMembers.map((member, index) => (

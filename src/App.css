@@ -85,16 +85,15 @@ button:hover {
 .brush-text {
   position: relative;
   display: inline-block;
-  padding: 20px;
   background-image: url("./assets/brush-stroke.svg");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
   font-weight: 800;
-  font-size: 20px;
-  -webkit-text-stroke: 0px var(--white-smoke);
+  font-size: 22px;
   color: var(--lime-green);
   transform: scale(1);
+  text-shadow: 1px 1px 3px rgba(9, 46, 49, 0.5);
 }
 
 /* Navbar */
