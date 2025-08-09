@@ -1,5 +1,6 @@
 import { Helmet } from "react-helmet-async";
-import LondonFoodCoopLogo from "../assets/lfc-logo.png";
+import LondonFoodCoopLogo  from "../assets/lfc-logo.png";
+import TheCatsBarkLogo  from "../assets/tcb-logo.png";
 
 const Portfolio = () => {
   const projects = [
@@ -8,7 +9,16 @@ const Portfolio = () => {
       image: LondonFoodCoopLogo,
       description: "Updates and maintenance in WordPress",
       link: "https://londonfood.coop",
+      year: "2023-2024"
     },
+
+    {
+      title: "The Cat's Bark",
+      image: TheCatsBarkLogo,
+      description: "Full-stack e-commerce website development.",
+      link: "https://thecatsbark.ca/",
+      year: "2024-ongoing"
+    }
   ];
 
   return (
@@ -51,7 +61,8 @@ const Portfolio = () => {
                     />
                     <div className="overlay d-flex justify-content-center align-items-center">
                       <div className="text-center">
-                        <p className="h5 text-white">{project.title}</p>
+                        <p className="h5 text-white portfolio-title">{project.title}</p>
+                        <p className="text-white mb-1">{project.year}</p>
                         <p className="text-white">{project.description}</p>
                       </div>
                     </div>

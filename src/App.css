@@ -216,15 +216,23 @@ footer .nav-link.active {
 
 .portfolio-item img {
   width: 100%;
-  height: auto;
-  max-height: 300px;
-  object-fit: cover;
+  height: 200px;
+  max-height: 200px;
+  object-fit: contain;
   border-radius: 8px;
   transition: transform 0.3s ease;
 }
 
 .portfolio-item:hover img {
   transform: scale(0.95);
+}
+
+.portfolio-title {
+  border-bottom: 2px solid currentColor;
+  display: inline-block;
+  padding-bottom: 2px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 .overlay {
