@@ -1,23 +1,32 @@
 import { Helmet } from "react-helmet-async";
 import LondonFoodCoopLogo  from "../assets/lfc-logo.png";
 import TheCatsBarkLogo  from "../assets/tcb-logo.png";
+import AntlerRiverMediaLogo  from "../assets/arm-logo.png";
 
 const Portfolio = () => {
   const projects = [
+    {
+      title: "Antler River Media",
+      image: AntlerRiverMediaLogo,
+      description: "Website redesign",
+      link: "https://antlerrivermedia.ca/",
+      year: "2025-2026"
+    },
+
+    {
+      title: "The Cat's Bark",
+      image: TheCatsBarkLogo,
+      description: "Website redesign and WordPress maintenance",
+      link: "https://thecatsbark.ca/",
+      year: "2024-ongoing"
+    }, 
+
     {
       title: "London Food Co-op",
       image: LondonFoodCoopLogo,
       description: "Updates and maintenance in WordPress",
       link: "https://londonfood.coop",
       year: "2023-2024"
-    },
-
-    {
-      title: "The Cat's Bark",
-      image: TheCatsBarkLogo,
-      description: "Full-stack e-commerce website development.",
-      link: "https://thecatsbark.ca/",
-      year: "2024-ongoing"
     }
   ];
 
