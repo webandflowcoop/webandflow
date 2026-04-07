@@ -8,7 +8,7 @@ const Portfolio = () => {
     {
       title: "Antler River Media",
       image: AntlerRiverMediaLogo,
-      description: "Website redesign",
+      description: "Website redesign and WordPress maintenance",
       link: "https://antlerrivermedia.ca/",
       year: "2025-2026"
     },
@@ -16,7 +16,7 @@ const Portfolio = () => {
     {
       title: "The Cat's Bark",
       image: TheCatsBarkLogo,
-      description: "Website redesign and WordPress maintenance",
+      description: "Full-stack e-commerce website development",
       link: "https://thecatsbark.ca/",
       year: "2024-ongoing"
     }, 
